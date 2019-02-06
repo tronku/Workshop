@@ -1,5 +1,6 @@
 package project.tronku.workshop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //to be filled....
+                Intent nextActivity = new Intent(MainActivity.this, NameActivity.class);
+                // this operator always points to most recent class, here its View class so MainActivity.this
+                startActivity(nextActivity);
             }
         });
     }

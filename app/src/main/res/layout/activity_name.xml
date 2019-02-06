@@ -63,6 +63,9 @@
         android:layout_below="@id/details"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:id="@+id/proceed_button"/>
+        android:id="@+id/proceed_button"
+        android:onClick="proceed"/>
+
+    <!-- another way of handling clicks -->
 
 </RelativeLayout>
