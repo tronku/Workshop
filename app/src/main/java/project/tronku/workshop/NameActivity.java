@@ -1,5 +1,6 @@
 package project.tronku.workshop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +31,10 @@ public class NameActivity extends AppCompatActivity {
         if (player1Name.isEmpty() || player2Name.isEmpty())
             Toast.makeText(this, "Please enter details", Toast.LENGTH_SHORT).show(); // here this points to NameActivity only
         else {
-            // will do later, new Activity!!!
+            Intent playActivity = new Intent(this, PlayActivity.class);
+            playActivity.putExtra("player1", player1Name);
+            playActivity.putExtra("player2", player2Name);
+            startActivity(playActivity);
         }
 
     }
