@@ -9,18 +9,27 @@
     android:background="@android:color/holo_blue_dark"
     android:gravity="center">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/game_img"
+        android:scaleType="centerCrop"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ro Sham Bo!"
+        android:text="@string/ro_sham_bo"
         android:textSize="36sp"
         android:textColor="@android:color/white"/>
 
+
+    <!-- use string resources Alt+Enter -->
     <Button
         android:layout_width="160dp"
         android:layout_height="70dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:text="PLAY!"
-        android:textSize="26sp"/>
+        android:textSize="26sp"
+        android:id="@+id/play_button"/>
 
 </LinearLayout>
